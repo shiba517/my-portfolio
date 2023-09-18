@@ -19,6 +19,6 @@
         "fa_icon": "FaSmileBeam",
         "context2": [
             "JavaScript", "Python", "HTML5", "CSS3", "SQL", "PHP", "MongoDB", "Django", "MySQL",
-            "Jquery", "Reaect", "Vue", "Node", "Laravel", "Laravel Nova", "Bootstrap", "Materialize", "Tailwind"]
+            "Jquery", "React", "Vue", "Node", "Laravel", "Laravel Nova", "Bootstrap", "Materialize", "Tailwind"]
     }
 ]
