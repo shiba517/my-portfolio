@@ -16,3 +16,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+/* ABOUT ME SECTION - AboutSection.jsx */
+.my-custom-bg {
+  background-image: linear-gradient(to right, #473567, #473567 5px, #39195c 5px, #39195c );
+  background-size: 10px 100%;
+}
