@@ -11,19 +11,19 @@ export const AboutSection = () => {
     }
 
     return (
-        <div className="min-h-screen bg-purple-900 pb-8">
+        <div className="min-h-screen bg-purple-200 pb-8">
             <div className='container mx-auto'>
-                <MySubHeader title='About me' />
-                <div className="grid grid-cols-1 md:grid-cols-5">
+                <MySubHeader title='About me' css='text-red-800'/>
+                <div className="grid grid-cols-1 md:grid-cols-5 ">
                     <div className='col md:col-span-2 mx-auto'>
-                        <img src={ me } alt="me" className='h-[30rem] border-white border-8 rounded' />
+                        <img src={ me } alt="me" className='h-[30rem] border-white border-8 rounded hover:rotate-6 transition-transform' />
                     </div>
-                    <div className='col md:col-span-3 px-4 pt-4 md:pt-0 text-gray-200'>
+                    <div className='col md:col-span-3 px-4 pt-4 md:pt-0 '>
                         {/* TABS */}
                         <div className='flex flex-row text-center'>
                             {aboutJson.map((about) => (
                                 <div 
-                                className={`w-full py-1 mx-1 rounded ${about.title === aboutTab.title ? "bg-yellow-500 text-black" : "bg-purple-800"}`}
+                                className={`w-full py-1 mx-1 rounded  cursor-pointer ${about.title === aboutTab.title ? "bg-yellow-500 text-black" : "bg-purple-800 hover:opacity-60"}`}
                                 onClick={() => updateAboutTab(about)}>
                                     <p>{ about.title }</p>
                                 </div>

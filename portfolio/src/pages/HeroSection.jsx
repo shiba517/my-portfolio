@@ -29,7 +29,7 @@ export const HeroSection = () => {
             </div>
 
             {/* SOCIAL MEDIA LINKS */}
-            <div className='text-red-700 text-2xl pt-2'>
+            <div className='text-red-800 text-2xl pt-2'>
                 <MyIcon 
                 link='https://github.com/shiba517' 
                 icon={<FontAwesomeIcon icon={faSquareGithub} />}
