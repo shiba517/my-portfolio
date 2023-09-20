@@ -4,6 +4,12 @@ import 'react-toastify/dist/ReactToastify.css';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+// import {  } from '@fortawesome/fontawesome-svg-core';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+
+
 
 export const Footer = () => {
     const form = useRef();
@@ -42,6 +48,20 @@ export const Footer = () => {
     return (
         <div className="pb-8 my-custom-bg bg-black px-10">
             <MySubHeader title='Get in touch' />
+
+            <div className='flex items-center justify-center mb-4 text-purple-900'>
+                <div>
+                    <a href="https://wa.me/+447960545799" target='_blank' rel="noreferrer" className=' text-4xl mx-2'><FontAwesomeIcon icon={faWhatsapp} /></a>
+                </div>
+                <div>
+                    <a href="mailto:shiba.cdeb@gmail.com" rel="noreferrer"className='text-4xl mx-2'>
+                        <FontAwesomeIcon icon={faEnvelope} />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/shiba-deb-2099b6105/" target='_blank' rel="noreferrer" className=' text-4xl mx-2'><FontAwesomeIcon icon={faLinkedin} /></a>
+                </div>
+            </div>
 
             <div className='text-left'>
                 <form ref={form} onSubmit={sendEmail}>
