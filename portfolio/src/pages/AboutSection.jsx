@@ -11,7 +11,7 @@ export const AboutSection = () => {
     }
 
     return (
-        <div className="min-h-screen bg-purple-200 pb-8">
+        <div className="min-h-fit bg-purple-100 pb-8">
             <div className='container mx-auto'>
                 <MySubHeader title='About me' css='text-red-800'/>
                 <div className="grid grid-cols-1 md:grid-cols-5 ">
@@ -34,7 +34,7 @@ export const AboutSection = () => {
                             <p>{ aboutTab.context }</p>
                             { aboutTab.context2 ? aboutTab.context2.map((skill) => (
                                 <p>{ skill }</p>
-                            )) : ""}
+                            )) : null}
                         </div>
                     </div>
                 </div>
