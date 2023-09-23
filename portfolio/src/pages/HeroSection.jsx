@@ -24,19 +24,21 @@ export const HeroSection = () => {
 
             {/* BUTTONS */}
             <div className='pt-2'>
-                <Button text = 'My CV' />
-                <Button text = 'Projects' />
+                <Button text = 'My CV' css='mx-1  hover:bg-yellow-600' />
+                <Button text = 'Projects' css='mx-1  hover:bg-yellow-600' />
             </div>
 
             {/* SOCIAL MEDIA LINKS */}
-            <div className='text-red-800 text-2xl pt-2'>
+            <div className='text-red-800 text-2xl pt-2 flex flex-row'>
                 <MyIcon 
                 link='https://github.com/shiba517' 
-                icon={<FontAwesomeIcon icon={faSquareGithub} />}
+                icon={<FontAwesomeIcon icon={faSquareGithub} />} 
+                css='hover:text-red-900'
                 />
                 <MyIcon 
                 link='https://www.linkedin.com/in/shiba-deb-2099b6105/' 
-                icon={<FontAwesomeIcon icon={faLinkedin} />}
+                icon={<FontAwesomeIcon icon={faLinkedin} />} 
+                css='hover:text-red-900'
                 />
             </div>
         </div>

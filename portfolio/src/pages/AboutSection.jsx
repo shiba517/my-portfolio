@@ -12,7 +12,7 @@ export const AboutSection = () => {
 
     return (
         <div className="min-h-fit bg-purple-100 pb-8">
-            <div className='container mx-auto'>
+            <div className='container md:px-20 mx-auto'>
                 <MySubHeader title='About me' css='text-red-800'/>
                 <div className="grid grid-cols-1 md:grid-cols-5 ">
                     <div className='col md:col-span-2 mx-auto'>
@@ -23,7 +23,7 @@ export const AboutSection = () => {
                         <div className='flex flex-row text-center'>
                             {aboutJson.map((about) => (
                                 <div 
-                                className={`w-full py-1 mx-1 rounded  cursor-pointer ${about.title === aboutTab.title ? "bg-yellow-500 text-black" : "bg-purple-700 hover:bg-purple-900 hover:text-gray-100"}`}
+                                className={`w-full py-1 mx-1 rounded capitalize cursor-pointer ${about.title === aboutTab.title ? "bg-yellow-500 text-black" : "bg-purple-700 hover:bg-purple-900 hover:text-gray-100"}`}
                                 onClick={() => updateAboutTab(about)}>
                                     <p>{ about.title }</p>
                                 </div>
