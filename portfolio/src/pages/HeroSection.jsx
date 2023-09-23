@@ -3,8 +3,6 @@ import { Button } from '../components/Button';
 import { MyIcon } from '../components/MyIcon'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons'
-// import { faLinkedin } from '@fortawesome/fontawesome-svg-core';
-
 
 export const HeroSection = () => {
     return (
@@ -24,8 +22,9 @@ export const HeroSection = () => {
 
             {/* BUTTONS */}
             <div className='pt-2'>
-                <Button text = 'My CV' css='mx-1  hover:bg-yellow-600' />
+                <Button text = 'My CV' css='mx-1  hover:bg-yellow-600' href="../assets/images/resume.pdf" download="cv_shiba_deb" />
                 <Button text = 'Projects' css='mx-1  hover:bg-yellow-600' />
+                {/* <a href="../assets/images/resume.pdf" download="resume">CV</a> */}
             </div>
 
             {/* SOCIAL MEDIA LINKS */}
