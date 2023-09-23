@@ -11,12 +11,12 @@ export const AboutSection = () => {
     }
 
     return (
-        <div id='AboutSection' className="min-h-fit bg-purple-100 pb-8">
+        <div id='AboutSection' className="min-h-fit bg-purple-100 pb-8 overflow-hidden">
             <div className='container md:px-20 mx-auto'>
                 <MySubHeader title='About me' css='text-red-800'/>
                 <div className="grid grid-cols-1 md:grid-cols-5 ">
                     <div className='col md:col-span-2 mx-auto'>
-                        <img src={ me } alt="me" className='h-[30rem] border-white border-8 rounded hover:rotate-6 transition-transform shadow-2xl' />
+                        <img src={ me } alt="me" className='h-[30rem] border-white border-8 rounded hover:rotate-6 transition-transform shadow-xl' />
                     </div>
                     <div className='col md:col-span-3 px-4 pt-4 md:pt-0 '>
                         {/* TABS */}
@@ -39,6 +39,7 @@ export const AboutSection = () => {
                     </div>
                 </div>
             </div>
+
             
         </div>
     )
