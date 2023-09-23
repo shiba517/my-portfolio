@@ -70,6 +70,7 @@ html {
 
 .custom-shape-divider-top-1695499085 .shape-fill {
   fill: #f3e8ff;
+  fill: #e9d5ff;
 }
 
 
@@ -96,5 +97,9 @@ html {
 }
 
 /* ABOUT ME SECTION - AboutSection.jsx */
+.my-circle-bg {
+  background-image: url('./assets/images/circle-scatter-haikei.svg');
+  /* background-image: url('./assets/images/blob-haikei.svg'); */
+}
 
 /* PROJECTS SECTION - ProjectsSection.jsx */

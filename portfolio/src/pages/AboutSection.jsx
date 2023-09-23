@@ -2,6 +2,7 @@ import { useState } from 'react';
 import me from '../assets/images/me.jpg';
 import aboutJson from '../dataFiles/about.json'
 import { MySubHeader } from "../components/MySubHeader";
+import { Wave } from '../components/Wave'
 
 export const AboutSection = () => {
     const [aboutTab, setAboutTab] = useState(aboutJson[0])
@@ -11,11 +12,16 @@ export const AboutSection = () => {
     }
 
     return (
-        <div id='AboutSection' className="min-h-fit bg-purple-100 pb-8 overflow-hidden">
-            <div className='container md:px-20 mx-auto'>
+        <div 
+        id='AboutSection' 
+        className="my-circle-bg min-h-fit  overflow-hidden bg-purple-200" 
+        style={{
+            backgroundImage: "../assets/images/circle-scatter-haikei.svg"
+        }}>
+            <div className='container md:px-20 mx-auto pb-4'>
                 <MySubHeader title='About me' css='text-red-800'/>
                 <div className="grid grid-cols-1 md:grid-cols-5 ">
-                    <div className='col md:col-span-2 mx-auto'>
+                    <div className='col md:col-span-2 mx-auto md:pb-4'>
                         <img src={ me } alt="me" className='h-[30rem] border-white border-8 rounded hover:rotate-6 transition-transform shadow-xl' />
                     </div>
                     <div className='col md:col-span-3 px-4 pt-4 md:pt-0 '>
@@ -39,7 +45,10 @@ export const AboutSection = () => {
                     </div>
                 </div>
             </div>
-
+            
+            <div className=''>
+                <Wave />
+            </div>
             
         </div>
     )

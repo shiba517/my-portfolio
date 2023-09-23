@@ -5,10 +5,11 @@ import projectsData from "../dataFiles/projects.json"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons'
 import aboutJson from '../dataFiles/about.json'
+import { Tilt } from '../components/Tilt';
 
 export const ProjectsSection = () => {
     return (
-        <div id='ProjectsSection' className="min-h-screen pb-8 my-custom-bg bg-purple-900 px-4">
+        <div id='ProjectsSection' className="min-h-screen my-custom-bg bg-purple-900 px-4 overflow-hidden">
             <div className='container md:px-20 mx-auto'>
                 <MySubHeader title='Projects' />
 
@@ -34,8 +35,6 @@ export const ProjectsSection = () => {
                     )) }
                 </div>
             </div>
-
-            
         </div>
     )
 }

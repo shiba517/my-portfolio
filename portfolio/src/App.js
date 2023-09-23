@@ -14,7 +14,6 @@ function App() {
         <Navigation />
         <HeroSection />
         <AboutSection />
-        <Wave />
         <ProjectsSection />
         <Tilt />
         <Footer />
