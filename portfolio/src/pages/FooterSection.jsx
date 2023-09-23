@@ -46,7 +46,7 @@ export const Footer = () => {
     };
 
     return (
-        <div className="pb-8 my-custom-bg bg-black px-10">
+        <div id='FooterSection' className="pb-8 my-custom-bg bg-black px-10">
             <MySubHeader title='Get in touch' />
 
             <div className='container flex mb-4 text-purple-900 flex-col md:flex-row md:px-20 '>

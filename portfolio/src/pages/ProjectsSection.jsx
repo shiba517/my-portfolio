@@ -7,10 +7,8 @@ import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons'
 import aboutJson from '../dataFiles/about.json'
 
 export const ProjectsSection = () => {
-    
-
     return (
-        <div className="min-h-screen pb-8 my-custom-bg bg-purple-900 px-4">
+        <div id='ProjectsSection' className="min-h-screen pb-8 my-custom-bg bg-purple-900 px-4">
             <div className='container md:px-20 mx-auto'>
                 <MySubHeader title='Projects' />
 
@@ -29,8 +27,8 @@ export const ProjectsSection = () => {
                         </div>
                         {/* Project external links */}
                         <div className="text-right pt-2 border-t-2 border-red-300 mt-2">
-                            <Button text={<FontAwesomeIcon icon={faSquareGithub} />} href={ project.github } css='mr-1 hover:bg-yellow-600' />
-                            <Button text='visit' href={ project.url } css='ml-1 hover:bg-yellow-600' />
+                            <Button target="_blank" text={<FontAwesomeIcon icon={faSquareGithub} />} href={ project.github } css='mr-1 hover:bg-yellow-600' />
+                            <Button target="_blank" text='visit' href={ project.url } css='ml-1 hover:bg-yellow-600' />
                         </div>
                     </div>
                     )) }

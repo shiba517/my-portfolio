@@ -11,7 +11,7 @@ export const AboutSection = () => {
     }
 
     return (
-        <div className="min-h-fit bg-purple-100 pb-8">
+        <div id='AboutSection' className="min-h-fit bg-purple-100 pb-8">
             <div className='container md:px-20 mx-auto'>
                 <MySubHeader title='About me' css='text-red-800'/>
                 <div className="grid grid-cols-1 md:grid-cols-5 ">

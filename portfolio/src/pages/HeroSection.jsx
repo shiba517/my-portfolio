@@ -7,6 +7,7 @@ import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons'
 export const HeroSection = () => {
     return (
         <div 
+        id="HeroSection"
         className="h-screen flex items-center justify-center flex-col"  
         style={{
             backgroundImage: `url(${background})`,
@@ -23,7 +24,7 @@ export const HeroSection = () => {
             {/* BUTTONS */}
             <div className='pt-2'>
                 <Button text = 'My CV' css='mx-1  hover:bg-yellow-600' href="../assets/images/resume.pdf" download="cv_shiba_deb" />
-                <Button text = 'Projects' css='mx-1  hover:bg-yellow-600' />
+                <Button text = 'Projects' css='mx-1  hover:bg-yellow-600' href="#ProjectsSection" />
                 {/* <a href="../assets/images/resume.pdf" download="resume">CV</a> */}
             </div>
 
