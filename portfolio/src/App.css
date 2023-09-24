@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 html {
   scroll-behavior: smooth;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Merriweather', serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .App {
@@ -21,36 +26,7 @@ html {
   color: white;
 }
 
-.my-curve {
-  position: absolute;
-  height: 10rem;
-  width: max-content;
-  bottom: 0;
-}
-
-.my-curve::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 55%;
-  height: 100%;
-  background-color: green;
-  transform: translate(85%, 60%);
-}
-
-.my-curve::after {
-  content: '';
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 55%;
-  height: 100%;
-  background-color: pink;
-  transform: translate(-4%, 40%);
-  z-index: -1;
-}
-
+/* WAVE DIVIDER - components/Wave.jsx */
 .custom-shape-divider-top-1695499085 {
   position: absolute;
   /* top: 0; */
@@ -74,7 +50,7 @@ html {
 }
 
 
-/* TILT DIVIDER - components/tilt.jsx */
+/* TILT DIVIDER - components/Tilt.jsx */
 .custom-shape-divider-top-1695500679 {
   position: absolute;
   /* top: 0; */
@@ -97,9 +73,11 @@ html {
 }
 
 /* ABOUT ME SECTION - AboutSection.jsx */
-.my-circle-bg {
+@media only screen and (min-width: 768px) {
+  .my-circle-bg {
   background-image: url('./assets/images/circle-scatter-haikei.svg');
-  /* background-image: url('./assets/images/blob-haikei.svg'); */
 }
+}
+
 
 /* PROJECTS SECTION - ProjectsSection.jsx */

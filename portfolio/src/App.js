@@ -4,12 +4,11 @@ import { AboutSection } from './pages/AboutSection'
 import { ProjectsSection } from "./pages/ProjectsSection";
 import { Footer } from './pages/FooterSection';
 import { Navigation } from './components/Navigation';
-import {Wave} from './components/Wave'
 import { Tilt } from './components/Tilt';
 
 function App() {
   return (
-    <div className="App scroll-smooth">
+    <div className="App scroll-smooth bg-black">
       <div>
         <Navigation />
         <HeroSection />

@@ -1,4 +1,5 @@
 import background from '../assets/images/hero_bg.jpg';
+import { motion } from "framer-motion"
 import { Button } from '../components/Button';
 import { MyIcon } from '../components/MyIcon'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -17,9 +18,23 @@ export const HeroSection = () => {
             height: '100vh'
         }}>
             {/* TITLE */}
-            <div>
-                <h1 className='text-6xl uppercase text-red-600 font-semibold'>Shiba</h1>
-            </div>
+            <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ 
+                duration: 1.5, // Just this for basic fade in motion
+                // ease: [0, 1.5, 0.8, 1.5],
+                // scale: {
+                //     type: "spring",
+                //     damping: 5,
+                //     stiffness: 100,
+                //     restDelta: 0.001
+                // }
+             }}
+            className=''
+            >
+                <h1 className='text-7xl uppercase text-red-600 font-semibold ease-in duration-300 font-sans'>Shiba</h1>
+            </motion.div>
 
             {/* BUTTONS */}
             <div className='pt-2'>

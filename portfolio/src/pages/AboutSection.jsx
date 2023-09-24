@@ -14,7 +14,7 @@ export const AboutSection = () => {
     return (
         <div 
         id='AboutSection' 
-        className="my-circle-bg min-h-fit  overflow-hidden bg-purple-200" 
+        className=" min-h-fit  overflow-hidden bg-purple-200 my-circle-bg" 
         style={{
             backgroundImage: "../assets/images/circle-scatter-haikei.svg"
         }}>
@@ -36,10 +36,11 @@ export const AboutSection = () => {
                             ))}
                         </div>
                         {/* TAB CONTENT */}
-                        <div className='pt-4 px-4'>
+                        <div className='pt-4 px-4 text-left'>
+                            <p className='text-purple-900 font-bold text-left text-lg mb-2'>"{ aboutTab.context3 }"</p>
                             <p>{ aboutTab.context }</p>
                             { aboutTab.context2 ? aboutTab.context2.map((skill) => (
-                                <p>{ skill }</p>
+                                <p className='text-center'>{ skill }</p>
                             )) : null}
                         </div>
                     </div>
