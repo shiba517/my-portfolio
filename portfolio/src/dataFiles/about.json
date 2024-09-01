@@ -2,7 +2,7 @@
     {
         "title": "bio",
         "fa_icon": "FaSmileBeam",
-        "context": "I am a Fullstack Developer with proficiency in HTML, CSS, SQL, JavaScript, Python, Django, MongoDB, PHP, React, Vue and Laravel. I also bring experience in communications with the public which came in use whilst working in the hospitality industry, and have been exposed to the world of creativity with my time in hair and beauty. Creative, collaborative, and certainly open to challenges.",
+        "context": "I am a Fullstack Developer with proficiency in HTML, CSS, SQL, JavaScript, Python, Django, MongoDB, PHP, React, Vue, Wordpress and Laravel. I also bring experience in communications with the public which came in use whilst working in the hospitality industry, and have been exposed to the world of creativity with my time in hair and beauty. Creative, collaborative, and certainly open to challenges.",
         "context3": "Greetings"
     },
     {
@@ -14,14 +14,17 @@
     {
         "title": "employment",
         "fa_icon": "FaSmileBeam",
-        "context": "Junior Web Developer - Brackets Digital (Oct 22 - current)",
-        "context3": "Here's what I've been upto"
+        "context3": "Here's what I've been upto",
+        "context4": [
+            "Junior Web Developer - Brackets Digital (Oct 22 - Mar 2024)", 
+            "Web Developer (Apr 24 - present)"
+        ]
     },
     {
         "title": "skills",
         "fa_icon": "FaSmileBeam",
         "context2": [
-            "JavaScript", "Python", "HTML5", "CSS3", "SQL", "PHP", "MongoDB", "Django", "MySQL",
+            "JavaScript", "Python", "HTML5", "CSS3", "SQL", "PHP", "Wordpress", "MongoDB", "Django", "MySQL",
             "Jquery", "React", "Vue", "Node", "Laravel", "Laravel Nova", "Bootstrap", "Materialize", "Tailwind"],
         "context3": "What I have learnt so far"
     }

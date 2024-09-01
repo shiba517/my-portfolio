@@ -42,6 +42,9 @@ export const AboutSection = () => {
                             { aboutTab.context2 ? aboutTab.context2.map((skill) => (
                                 <p className='text-center'>{ skill }</p>
                             )) : null}
+                            { aboutTab.context4 ? aboutTab.context4.map((skill) => (
+                                <p className=''>{ skill }</p>
+                            )) : null}
                         </div>
                     </div>
                 </div>
